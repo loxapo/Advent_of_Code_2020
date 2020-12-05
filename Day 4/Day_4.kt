@@ -31,7 +31,71 @@ fun main(args: Array<String>)
         var missingFields = ArrayList<String>()
         for (k in keys.indices)
         {  
-            if (hashmap.containsKey(keys.get(k))) fields++
+            val currentKey = keys.get(k)
+            if (hashmap.containsKey(currentKey)) 
+            {
+                if (currentKey == "byr")
+                {
+                    if (hashmap.get(currentKey)?.toInt() in 1920..2002) 
+                    {
+                        fields++
+                    }
+                }
+                else if (currentKey == "iyr")
+                {
+                    if (hashmap.get(currentKey)?.toInt() in 2010..2020) 
+                    {
+                        fields++
+                    }
+                }
+                else if (currentKey == "eyr")
+                {
+                    if (hashmap.get(currentKey)?.toInt() in 2020..2030) 
+                    {
+                        fields++
+                    }
+                }
+                else if (currentKey == "hgt")
+                {
+                    var value = hashmap.get(currentKey)
+                    if (value?.substring(value.length-2) == "cm" && value.substring(0, value.length-2).toInt() in 150..193) 
+                    {
+                        fields++
+                    }
+                    else if (value?.substring(value.length-2) == "in" && value.substring(0, value.length-2).toInt() in 59..76) 
+                    {
+                        fields++
+                    }
+                }
+                else if (currentKey == "hcl")
+                {
+                    var value = hashmap.get(currentKey)
+                    if (value?.substring(0, 1) == "#" && value.substring(1).matches("^[a-f0-9]*$".toRegex())) 
+                    {
+                        fields++
+                    }
+                }
+                else if (currentKey == "ecl")
+                {
+                    var value = hashmap.get(currentKey)
+                    if(value == "amb" || value == "blu" || value == "brn" || value == "gry" || value == "grn" || value == "hzl" || value == "oth") 
+                    {
+                        fields++
+                    }
+                }
+                else if (currentKey == "pid")
+                {
+                    var value = hashmap.get(currentKey)
+                    if (value?.length == 9 && value.matches("^[0-9]*$".toRegex())) 
+                    {
+                        fields++
+                    }
+                }
+                else if (currentKey == "cid")
+                {
+                    fields++
+                }
+            }
             else missingFields.add(keys.get(k))
         }
         if (fields == keys.size || ((fields == keys.size - 1) && missingFields.contains(optionalKey))) validPassports++
@@ -39,5 +103,5 @@ fun main(args: Array<String>)
         hashmap.clear()
         i++
     }
-    println("Part 1: The number of valid passports is: " + validPassports)
+    println("Part 2: The number of valid passports is: " + validPassports)
 }
