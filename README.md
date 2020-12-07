@@ -6,3 +6,4 @@ In Kotlin, at Rob's suggestion.
 3. [Day 3: Toboggan Trajectory](./Day%203/Day_3.kt)
 4. [Day 4: Passport Processing](./Day%204/Day_4.kt)
 5. [Day 5: Binary Boarding](./Day%205/Day_5.kt)
+6. [Day 6: Custom Customs](./Day%206/Day_6.kt)
