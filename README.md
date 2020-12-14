@@ -7,4 +7,4 @@ In Kotlin, at Rob's suggestion.
 4. [Day 4: Passport Processing](./Day%204/Day_4.kt)
 5. [Day 5: Binary Boarding](./Day%205/Day_5.kt)
 6. [Day 6: Custom Customs](./Day%206/Day_6.kt)
-7. [Day 7: Handy Haversacks](./Day%207/Day_7.kt)
+7. [Day 7: Handy Haversacks](./Day%207/Day_7.kt) - See K's day 7 for better efficiency
