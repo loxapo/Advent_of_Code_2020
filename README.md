@@ -10,3 +10,4 @@ In Kotlin, at Rob's suggestion.
 7. [Day 7: Handy Haversacks](./Day%207/Day_7.kt) - See K's day 7 for better efficiency
 8. [Day 8: Handheld Halting](./Day%208/Day_8.kt)
 9. [Day 9: Encoding Error](./Day%209/Day_9.kt)
+10. [Day 10: Adapter Array](./Day%2010/Day_10.kt)
