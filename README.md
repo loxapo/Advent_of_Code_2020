@@ -9,3 +9,4 @@ In Kotlin, at Rob's suggestion.
 6. [Day 6: Custom Customs](./Day%206/Day_6.kt)
 7. [Day 7: Handy Haversacks](./Day%207/Day_7.kt) - See K's day 7 for better efficiency
 8. [Day 8: Handheld Halting](./Day%208/Day_8.kt)
+9. [Day 9: Encoding Error](./Day%209/Day_9.kt)
