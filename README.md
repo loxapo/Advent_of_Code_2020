@@ -11,3 +11,4 @@ In Kotlin, at Rob's suggestion.
 8. [Day 8: Handheld Halting](./Day%208/Day_8.kt)
 9. [Day 9: Encoding Error](./Day%209/Day_9.kt)
 10. [Day 10: Adapter Array](./Day%2010/Day_10.kt)
+11. [Day 11: Seating System](./Day%2011/Day_11.kt)
